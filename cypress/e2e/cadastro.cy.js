@@ -31,7 +31,7 @@ describe('Funcionalidade: Cadastro', () => {
     cy.url().should('include', 'dashboard')
   });
 
-  it.only('Deve fazer cadastro com sucesso usando Faker', () => {
+  it('Deve fazer cadastro com sucesso usando Faker', () => {
     let nome = faker.person.fullName()
     let email = faker.internet.email()
     cy.get('#name').type(nome)
@@ -43,5 +43,12 @@ describe('Funcionalidade: Cadastro', () => {
     cy.get('#register-btn').click()
     cy.url().should('include', 'dashboard')
     cy.get('#user-name').should('contain', nome)
+  });
+
+  it('Deve preencher cadastro com sucesso usando comando customizado', () => {
+    let email = `user${Date.now()}@teste.com`
+    let nome = faker.person.fullName({sex: 'female'})
+    cy.preencherCadastro(nome, email, '987654321', 'teste123', 'teste123')
+    cy.url().should('include', 'dashboard')
   });
 });
