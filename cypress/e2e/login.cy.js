@@ -24,7 +24,7 @@ describe('Funcionalidade: Login', () => {
         cy.url().should('include', 'dashboard')
     });
 
-    it.only('Deve fazer login com sucesso usando importação de massa de dados', () => {
+    it('Deve fazer login com sucesso usando importação de massa de dados', () => {
         cy.login(user.email, user.senha)
     });
 });
