@@ -1,5 +1,7 @@
 # Hub de Leitura - Ui Tests
 
+![CI Status](https://github.com/rm-oliveira/hub-leitura-ui-tests/actions/workflows/cypress.yml/badge.svg)
+
 Este repositório contém testes automatizados de interface (UI) desenvolvidos com **Cypress** para o sistema **Hub de Leitura**, com foco em testes end-to-end (E2E).
 
 O projeto foi desenvolvido durante o curso de Qualidade de Software da EBAC, aplicando boas práticas de automação de testes.
@@ -16,18 +18,29 @@ Projeto original da EBAC:
 
 https://github.com/EBAC-QE/hub-de-leitura-integrado
 
-⚠️ Antes de rodar os testes, certifique-se de que o servidor esteja rodando conforme as instruções do repositório da aplicação.
+⚠️ Para execução local, certifique-se de que o servidor esteja rodando conforme as instruções do repositório da aplicação (porta 3000).
 
-## Execução dos testes (UI)
+## Integração Contínua (CI)
+
+Este projeto possui pipeline automatizada utilizando **GitHub Actions**, que:
+
+- Clona o servidor da aplicação
+- Instala as dependências
+- Sobe o ambiente automaticamente
+- Aguarda a disponibilidade da aplicação
+- Executa os testes E2E em modo headless
+
+Os testes são executados automaticamente a cada push na branch `main`.
+
+## Execução dos testes (Local)
 
 ### Pré-requisitos
 
 - Node.js (versão LTS)
 - npm
-- Editor de código (Visual Studio Code recomendado)
-- Aplicação **Hub de Leitura** rodando localmente
+- Aplicação **Hub de Leitura** rodando localmente na porta 3000
 
-### Instalação do projeto de testes
+### Instalação
 
 Clone este repositório e instale as dependências:
 ```bash
@@ -40,17 +53,17 @@ npm install
 
 ### Executando os testes
 
-Abrir o Cypress em modo interativo:
+Modo interativo:
 ```bash
 npx cypress open
 ```
-Executar os testes em modo headless:
+Modo headless:
 ```bash
-npx cypress run
+npm test
 ```
 ### Configuração da aplicação
 
-A URL da aplicação testada pode ser ajustada no arquivo cypress.config.js.
+A URL base da aplicação pode ser ajustada no arquivo:
 
 http://localhost:3000/
 
@@ -60,3 +73,4 @@ http://localhost:3000/
 - JavaScript
 - Node.js
 - Git & GitHub
+- GitHub Actions (CI)
