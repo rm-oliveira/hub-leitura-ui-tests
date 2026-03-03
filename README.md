@@ -6,13 +6,17 @@ O projeto foi desenvolvido durante o curso de Qualidade de Software da EBAC, apl
 
 ## Sistema Testado
 
-Os testes deste projeto são executados sobre a aplicação **Hub de Leitura**, disponibilizada pela EBAC para fins educacionais.
+Os testes deste projeto são executados sobre a aplicação Hub de Leitura, originalmente disponibilizada pela EBAC para fins educacionais.
 
-Repositório da aplicação:
+Repositório da aplicação (fork utilizado neste projeto):
+
+https://github.com/rm-oliveira/hub-de-leitura-integrado
+
+Projeto original da EBAC:
 
 https://github.com/EBAC-QE/hub-de-leitura-integrado
 
-⚠️ Antes de rodar os testes, certifique-se de que o servidor da aplicação esteja rodando localmente conforme as instruções do README oficial.
+⚠️ Antes de rodar os testes, certifique-se de que o servidor esteja rodando conforme as instruções do repositório da aplicação.
 
 ## Execução dos testes (UI)
 
