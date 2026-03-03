@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout
+      - name: Checkout dos testes
         uses: actions/checkout@v3
 
       - name: Setup Node
@@ -17,8 +17,27 @@ jobs:
         with:
           node-version: 18
 
-      - name: Install dependencies
+      - name: Clonar servidor UI
+        run: git clone https://github.com/rm-oliveira/hub-de-leitura-integrado.git
+
+      - name: Instalar dependências do servidor
+        run: |
+          cd hub-de-leitura-integrado
+          npm install
+
+      - name: Subir servidor
+        run: |
+          cd hub-de-leitura-integrado
+          npm start &
+
+      - name: Instalar wait-on
+        run: npm install wait-on --no-save
+
+      - name: Aguardar servidor iniciar
+        run: npx wait-on http://localhost:3000
+
+      - name: Instalar dependências dos testes
         run: npm install
 
-      - name: Run Cypress
-        run: npx cypress run
+      - name: Rodar Cypress
+        run: npm test
