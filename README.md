@@ -4,7 +4,7 @@
 
 Este repositório contém testes automatizados de interface (UI) desenvolvidos com **Cypress** para o sistema **Hub de Leitura**, com foco em testes end-to-end (E2E).
 
-O projeto foi desenvolvido durante o curso de Qualidade de Software da EBAC, aplicando boas práticas de automação de testes.
+O projeto foi desenvolvido durante o curso de **Qualidade de Software da EBAC**, aplicando boas práticas de automação de testes.
 
 ## Sistema Testado
 
