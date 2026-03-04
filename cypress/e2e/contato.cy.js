@@ -24,7 +24,7 @@ describe('Funcionalidade: Contato', () => {
     cy.get('#alert-container').should('contain', 'Por favor, preencha o campo Nome')
   })
 
-  it('Deve validar mensagem de erro ao enviar sem preenchero email', () => {
+  it('Deve validar mensagem de erro ao enviar sem preencher o email', () => {
     cy.get('#name').type('Rayane')
     cy.get('#email').clear()
     cy.get('#subject').select('Sugestões')

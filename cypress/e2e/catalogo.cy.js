@@ -21,7 +21,7 @@ describe('Funcionalidade: Catálogo de livros', () => {
         cy.get('#global-alert-container').should('contain', '"1984" foi adicionado à cesta!')
     });    
 
-     it('Deve clicar no último botão Adicionar à cesta', () => {
+    it('Deve clicar no último botão Adicionar à cesta', () => {
         cy.get('.btn-primary').last().click()
         cy.get('#cart-count').should('contain', 1)
     });    

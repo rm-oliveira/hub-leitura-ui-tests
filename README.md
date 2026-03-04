@@ -60,6 +60,50 @@ Modo headless:
 ```bash
 npm test
 ```
+
+## Cenários Automatizados
+
+Os testes E2E cobrem os principais fluxos da aplicação, aplicando diferentes estratégias de automação como comandos customizados, Page Objects, massa de dados dinâmica e uso da biblioteca Faker.
+
+### Login
+
+- Login com credenciais válidas
+- Login utilizando comando customizado
+- Login com perfil administrador
+- Login utilizando massa de dados dinâmica com Faker
+
+### Cadastro de Usuário
+
+- Cadastro com dados válidos
+- Cadastro utilizando geração dinâmica de e-mail com JavaScript
+- Cadastro utilizando biblioteca Faker
+- Cadastro utilizando comandos customizados
+- Cadastro utilizando padrão Page Object
+- Validação de mensagem de erro ao tentar cadastrar sem preencher o nome
+
+### Formulário de Contato
+
+- Envio de formulário com sucesso
+- Validação de erro ao enviar sem preencher:
+  - Nome
+  - E-mail
+  - Assunto
+  - Mensagem
+
+### Catálogo de Livros
+
+- Adição de livro à cesta
+- Adição de múltiplos livros à cesta
+- Interação com posições específicas da lista (primeiro, último e terceiro item)
+- Navegação para página de detalhes do livro ao clicar no nome
+
+### Busca no Catálogo
+
+- Busca por título específico
+- Busca utilizando massa de dados externa
+- Busca utilizando Fixture
+- Validação da listagem completa de livros exibidos
+
 ### Configuração da aplicação
 
 A URL base da aplicação pode ser ajustada no arquivo:
