@@ -4,11 +4,11 @@
 
 Este repositório contém testes automatizados de interface (UI) desenvolvidos com **Cypress** para o sistema **Hub de Leitura**, com foco em testes end-to-end (E2E).
 
-O projeto foi desenvolvido durante o curso de **Qualidade de Software da EBAC**, aplicando boas práticas de automação de testes.
+O projeto foi desenvolvido durante o curso de **Qualidade de Software da EBAC**, aplicando boas práticas de automação e integração contínua.
 
 ## Sistema Testado
 
-Os testes deste projeto são executados sobre a aplicação Hub de Leitura, originalmente disponibilizada pela EBAC para fins educacionais.
+Os testes são executados sobre a aplicação Hub de Leitura, originalmente disponibilizada pela EBAC para fins educacionais.
 
 Repositório da aplicação (fork utilizado neste projeto):
 
@@ -38,11 +38,10 @@ Os testes são executados automaticamente a cada push na branch `main`.
 
 - Node.js (versão LTS)
 - npm
-- Aplicação **Hub de Leitura** rodando localmente na porta 3000
+- Aplicação Hub de Leitura rodando localmente na porta 3000
 
 ### Instalação
 
-Clone este repositório e instale as dependências:
 ```bash
 git clone https://github.com/rm-oliveira/hub-leitura-ui-tests.git
 
@@ -64,6 +63,10 @@ npm test
 ### Configuração da aplicação
 
 A URL base da aplicação pode ser ajustada no arquivo:
+
+cypress.config.js
+
+URL padrão utilizada:
 
 http://localhost:3000/
 
