@@ -107,12 +107,14 @@ Os testes E2E cobrem os principais fluxos da aplicação, aplicando diferentes e
 ### Configuração da aplicação
 
 A URL base da aplicação pode ser ajustada no arquivo:
-
+```bash
 cypress.config.js
+```
 
 URL padrão utilizada:
-
+```bash
 http://localhost:3000/
+```
 
 ## Tecnologias utilizadas
 
