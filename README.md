@@ -1,14 +1,18 @@
-# Hub de Leitura - Ui Tests
+# 🌐 Hub de Leitura - UI Tests
 
 ![CI Status](https://github.com/rm-oliveira/hub-leitura-ui-tests/actions/workflows/cypress.yml/badge.svg)
 
+## 📌 Sobre o projeto
+
 Este repositório contém testes automatizados de interface (UI) desenvolvidos com **Cypress** para o sistema **Hub de Leitura**, com foco em testes end-to-end (E2E).
 
-O projeto foi desenvolvido durante o curso de **Qualidade de Software da EBAC**, aplicando boas práticas de automação e integração contínua.
+## 🎓 Contexto
 
-## Sistema Testado
+Projeto desenvolvido durante o curso de Qualidade de Software da EBAC, com aplicação de boas práticas de automação, Page Object Model (POM) e integração contínua (CI).
 
-Os testes são executados sobre a aplicação Hub de Leitura, originalmente disponibilizada pela EBAC para fins educacionais.
+## 🌐 Sistema Testado
+
+Os testes são executados sobre a aplicação Hub de Leitura, disponibilizada originalmente pela EBAC para fins educacionais.
 
 Repositório da aplicação (fork utilizado neste projeto):
 
@@ -20,7 +24,7 @@ https://github.com/EBAC-QE/hub-de-leitura-integrado
 
 ⚠️ Para execução local, certifique-se de que o servidor esteja rodando conforme as instruções do repositório da aplicação (porta 3000).
 
-## Integração Contínua (CI)
+## 🔄 Integração Contínua (CI)
 
 Este projeto possui pipeline automatizada utilizando **GitHub Actions**, que:
 
@@ -32,13 +36,13 @@ Este projeto possui pipeline automatizada utilizando **GitHub Actions**, que:
 
 Os testes são executados automaticamente a cada push na branch `main`.
 
-## Execução dos testes (Local)
-
-### Pré-requisitos
+## ⚙️ Pré-requisitos
 
 - Node.js (versão LTS)
 - npm
 - Aplicação Hub de Leitura rodando localmente na porta 3000
+
+## ▶️ Execução dos testes (Local)
 
 ### Instalação
 
@@ -61,9 +65,9 @@ Modo headless:
 npm test
 ```
 
-## Cenários Automatizados
+## ✅ Cenários Automatizados
 
-Os testes E2E cobrem os principais fluxos da aplicação, aplicando diferentes estratégias de automação como comandos customizados, Page Objects, massa de dados dinâmica e uso da biblioteca Faker.
+Os testes E2E cobrem os principais fluxos da aplicação, aplicando diferentes estratégias de automação, como comandos customizados, Page Objects Model (POM), massa de dados dinâmica e uso da biblioteca Faker.
 
 ### Login
 
@@ -104,7 +108,7 @@ Os testes E2E cobrem os principais fluxos da aplicação, aplicando diferentes e
 - Busca utilizando Fixture
 - Validação da listagem completa de livros exibidos
 
-### Configuração da aplicação
+## ⚙️ Configuração da aplicação
 
 A URL base da aplicação pode ser ajustada no arquivo:
 ```bash
@@ -116,10 +120,16 @@ URL padrão utilizada:
 http://localhost:3000/
 ```
 
-## Tecnologias utilizadas
+## 🚀 Tecnologias utilizadas
 
 - Cypress
 - JavaScript
 - Node.js
+- Faker (geração de dados)
 - Git & GitHub
-- GitHub Actions (CI)
+- GitHub Actions (CI/CD)
+- Page Object Model (POM)
+
+## 👩‍💻 Autora
+
+Desenvolvido por Rayane 🚀
